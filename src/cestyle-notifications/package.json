@@ -1,12 +1,12 @@
 {
   "name": "@cestyle/notifications",
   "description": "Notification system based on CeStyle components",
-  "version": "1.0.0",
+  "version": "0.0.1",
   "main": "cjs/index.js",
   "module": "esm/index.js",
   "types": "lib/index.d.ts",
   "license": "MIT",
-  "author": "Vitaly Rtishchev <rtivital@gmail.com>",
+  "author": "Lalith <lalith.s@plivo.com>",
   "sideEffects": false,
   "homepage": "https://cestyle.dev/others/notifications/",
   "repository": {
@@ -28,8 +28,8 @@
     "notification-system"
   ],
   "peerDependencies": {
-    "@cestyle/core": "1.0.0",
-    "@cestyle/hooks": "1.0.0",
+    "@cestyle/core": "0.0.1",
+    "@cestyle/hooks": "0.0.1",
     "react": ">=16.8.0",
     "react-dom": ">=16.8.0"
   },

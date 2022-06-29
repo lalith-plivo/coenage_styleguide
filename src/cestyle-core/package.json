@@ -1,12 +1,12 @@
 {
   "name": "@cestyle/core",
   "description": "React components library focused on usability, accessibility and developer experience",
-  "version": "1.0.0",
+  "version": "0.0.1",
   "main": "cjs/index.js",
   "module": "esm/index.js", 
   "types": "lib/index.d.ts",
   "license": "MIT",
-  "author": "Vitaly Rtishchev <rtivital@gmail.com>",
+  "author": "Lalith <lalith.s@plivo.com>",
   "sideEffects": false,
   "homepage": "https://cestyle.dev/",
   "repository": {
@@ -27,12 +27,12 @@
     "emotion"
   ],
   "peerDependencies": {
-    "@cestyle/hooks": "1.0.0",
+    "@cestyle/hooks": "0.0.1",
     "react": ">=16.8.0",
     "react-dom": ">=16.8.0"
   },
   "dependencies": {
-    "@cestyle/styles": "1.0.0",
+    "@cestyle/styles": "0.0.1",
     "@radix-ui/react-scroll-area": "^0.1.1",
     "react-textarea-autosize": "^8.3.2",
     "@popperjs/core": "^2.9.3",

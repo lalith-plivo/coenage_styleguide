@@ -1,9 +1,9 @@
 {
   "name": "cestyle-docs",
   "private": true,
-  "description": "CeStyle docs",
-  "version": "1.0.0",
-  "author": "Vitaly Rtishchev <rtivital@gmail.com>",
+  "description": "Coengage Styleguide docs",
+  "version": "0.0.1",
+  "author": "Lalith <lalith.s@plivo.com>",
   "dependencies": {
     "@mdx-js/mdx": "^1.6.22",
     "@mdx-js/react": "^1.6.22",

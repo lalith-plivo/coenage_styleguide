@@ -1,12 +1,12 @@
 {
   "name": "@cestyle/tests",
   "private": true,
-  "version": "1.0.0",
+  "version": "0.0.1",
   "main": "cjs/index.js",
   "module": "esm/index.js",
   "types": "lib/index.d.ts",
   "license": "MIT",
-  "author": "Vitaly Rtishchev <rtivital@gmail.com>",
+  "author": "Lalith <lalith.s@plivo.com>",
   "peerDependencies": {},
   "dependencies": {},
   "devDependencies": {}

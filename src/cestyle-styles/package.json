@@ -1,12 +1,12 @@
 {
   "name": "@cestyle/styles",
   "description": "CeStyle css-in-js styles engine, based on emotion",
-  "version": "1.0.0",
+  "version": "0.0.1",
   "main": "cjs/index.js",
   "module": "esm/index.js",
   "types": "lib/index.d.ts",
   "license": "MIT",
-  "author": "Vitaly Rtishchev <rtivital@gmail.com>",
+  "author": "Lalith <lalith.s@plivo.com>",
   "sideEffects": false,
   "homepage": "https://cestyle.dev",
   "repository": {

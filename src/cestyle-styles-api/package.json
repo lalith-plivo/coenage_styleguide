@@ -2,12 +2,12 @@
   "name": "@cestyle/styles-api",
   "description": "CeStyle components styles api descriptions",
   "private": true,
-  "version": "1.0.0",
+  "version": "0.0.1",
   "main": "cjs/index.js",
   "module": "esm/index.js",
   "types": "lib/index.d.ts",
   "license": "MIT",
-  "author": "Vitaly Rtishchev <rtivital@gmail.com>",
+  "author": "Lalith <lalith.s@plivo.com>",
   "sideEffects": false,
   "homepage": "https://cestyle.dev",
   "repository": {
@@ -16,8 +16,8 @@
     "directory": "src/cestyle-styles-api"
   },
   "peerDependencies": {
-    "@cestyle/core": "1.0.0",
-    "@cestyle/hooks": "1.0.0"
+    "@cestyle/core": "0.0.1",
+    "@cestyle/hooks": "0.0.1"
   },
   "dependencies": {},
   "devDependencies": {}
