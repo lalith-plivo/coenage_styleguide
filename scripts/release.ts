@@ -98,8 +98,8 @@ const { argv }: { argv: any } = yargs(hideBin(process.argv))
 
   open(
     githubRelease({
-      user: 'cestyledev',
-      repo: 'cestyle',
+      user: 'lalith-plivo',
+      repo: 'coenage_styleguide',
       tag: incrementedVersion,
       title: incrementedVersion,
     })

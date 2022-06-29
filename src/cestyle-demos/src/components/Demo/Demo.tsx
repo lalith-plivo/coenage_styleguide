@@ -18,13 +18,13 @@ interface DemoProps {
 export function Demo({ data, demoProps, configuratorProps }: DemoProps) {
   const theme = useCeStyleTheme();
   const background =
-    data && typeof data.background === 'function' ? data.background(theme.colorScheme) : undefined;
+    typeof data.background === 'function' ? data.background(theme.colorScheme) : undefined;
   if (data.type === 'demo') {
     return (
       <CodeDemo
         language="tsx"
         code={data.code || null}
-        // demoBackground={background}
+        demoBackground={background}
         {...data.demoProps}
         {...demoProps}
       >
