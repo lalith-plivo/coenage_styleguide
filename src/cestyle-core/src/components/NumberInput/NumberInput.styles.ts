@@ -13,7 +13,7 @@ export const CONTROL_SIZES = {
   xl: 36,
 };
 
-export default createStyles((theme, { }: NumberInputStylesParams) => ({
+export default createStyles((theme, {}: NumberInputStylesParams) => ({
   rightSection: {
     display: 'flex',
     flexDirection: 'column',
@@ -30,10 +30,12 @@ export default createStyles((theme, { }: NumberInputStylesParams) => ({
     width: theme.fn.size({ size: 'sm', sizes: CONTROL_SIZES }),
     padding: 0,
     WebkitTapHighlightColor: 'transparent',
-    borderBottom: `1px solid ${theme.colorScheme === 'dark' ? theme.colors.dark[4] : theme.colors.gray[4]
-      }`,
-    borderLeft: `1px solid ${theme.colorScheme === 'dark' ? theme.colors.dark[4] : theme.colors.gray[4]
-      }`,
+    borderBottom: `1px solid ${
+      theme.colorScheme === 'dark' ? theme.colors.dark[4] : theme.colors.gray[4]
+    }`,
+    borderLeft: `1px solid ${
+      theme.colorScheme === 'dark' ? theme.colors.dark[4] : theme.colors.gray[4]
+    }`,
     borderTop: 0,
     borderRight: 0,
     backgroundColor: 'transparent',
@@ -60,8 +62,9 @@ export default createStyles((theme, { }: NumberInputStylesParams) => ({
 
     '&::after': {
       borderWidth: '0 5px 5px 5px',
-      borderColor: `transparent transparent ${theme.colorScheme === 'dark' ? theme.colors.dark[0] : theme.black
-        } transparent`,
+      borderColor: `transparent transparent ${
+        theme.colorScheme === 'dark' ? theme.colors.dark[0] : theme.black
+      } transparent`,
     },
 
     '&:disabled::after': {
@@ -75,8 +78,9 @@ export default createStyles((theme, { }: NumberInputStylesParams) => ({
 
     '&::after': {
       borderWidth: '5px 5px 0 5px',
-      borderColor: `${theme.colorScheme === 'dark' ? theme.colors.dark[0] : theme.black
-        } transparent transparent transparent`,
+      borderColor: `${
+        theme.colorScheme === 'dark' ? theme.colors.dark[0] : theme.black
+      } transparent transparent transparent`,
     },
 
     '&:disabled::after': {

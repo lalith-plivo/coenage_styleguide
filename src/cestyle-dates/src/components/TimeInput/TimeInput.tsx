@@ -29,9 +29,9 @@ export type TimeInputStylesNames =
 
 export interface TimeInputProps
   extends DefaultProps<TimeInputStylesNames>,
-  InputBaseProps,
-  InputWrapperBaseProps,
-  Omit<React.ComponentPropsWithoutRef<'div'>, 'onChange' | 'value' | 'defaultValue'> {
+    InputBaseProps,
+    InputWrapperBaseProps,
+    Omit<React.ComponentPropsWithoutRef<'div'>, 'onChange' | 'value' | 'defaultValue'> {
   /** Input size */
   size?: CeStyleSize;
 

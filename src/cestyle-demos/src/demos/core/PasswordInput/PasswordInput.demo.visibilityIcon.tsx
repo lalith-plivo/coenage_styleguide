@@ -12,7 +12,7 @@ function Demo() {
       label="Change visibility toggle icon"
       placeholder="Change visibility toggle icon"
       defaultValue="secret"
-      visibilityToggleIcon={({ reveal, size }) =>
+      visibilityToggleIcon={({ reveal }) =>
         reveal ? <EyeOff size={size} /> : <EyeCheck size={size} />
       }
     />
@@ -27,8 +27,8 @@ function Demo() {
         label="Change visibility toggle icon"
         placeholder="Change visibility toggle icon"
         defaultValue="secret"
-        visibilityToggleIcon={({ reveal, size }) =>
-          reveal ? <EyeOff size={size} /> : <EyeCheck size={size} />
+        visibilityToggleIcon={({ reveal }) =>
+          reveal ? <EyeOff /> : <EyeCheck />
         }
       />
     </div>

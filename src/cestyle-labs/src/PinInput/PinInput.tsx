@@ -18,8 +18,8 @@ export type PinInputStylesNames = InputStylesNames;
 
 export interface PinInputProps
   extends DefaultProps<PinInputStylesNames>,
-  InputBaseProps,
-  Omit<React.ComponentPropsWithoutRef<'div'>, 'onChange'> {
+    InputBaseProps,
+    Omit<React.ComponentPropsWithoutRef<'div'>, 'onChange'> {
   /** Input name attribute, used to bind inputs in one group, by default generated randomly with use-id hook */
   name?: string;
 

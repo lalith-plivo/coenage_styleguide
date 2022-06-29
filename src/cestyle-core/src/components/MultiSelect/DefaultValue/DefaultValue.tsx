@@ -7,7 +7,7 @@ export type DefaultValueStylesNames = Selectors<typeof useStyles>;
 
 export interface MultiSelectValueProps
   extends DefaultProps<DefaultValueStylesNames>,
-  React.ComponentPropsWithoutRef<'div'> {
+    React.ComponentPropsWithoutRef<'div'> {
   label: string;
   onRemove(): void;
   disabled: boolean;

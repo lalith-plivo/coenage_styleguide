@@ -92,7 +92,6 @@ storiesOf('Modals Manager', module).add('Custom modal', () => (
   <ModalsProvider
     modals={{
       hello: ({ context, id, innerProps }: ContextModalProps<{ contextProp: string }>) => {
-        console.log(innerProps);
         return (
           <div>
             <div>Test custom modal: {innerProps.contextProp}</div>

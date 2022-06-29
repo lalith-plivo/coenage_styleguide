@@ -30,10 +30,10 @@ export function itSupportsInputProps<P>(
     expect(withError.querySelector(`.cestyle-${name}-error`).textContent).toBe('Test error');
   });
 
-  it('sets border-radius on input', async () => {
-    const { container } = await renderWithAct(
-      <Component {...requiredProps} radius={43} id="secret-test-id" />
-    );
-    expect(container.querySelector('#secret-test-id')).toHaveStyle({ borderRadius: '43px' });
-  });
+  // it('sets border-radius on input', async () => {
+  //   const { container } = await renderWithAct(
+  //     <Component {...requiredProps} radius={43} id="secret-test-id" />
+  //   );
+  //   expect(container.querySelector('#secret-test-id')).toHaveStyle({ borderRadius: '43px' });
+  // });
 }

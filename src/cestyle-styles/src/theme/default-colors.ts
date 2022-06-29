@@ -183,12 +183,7 @@ export const DEFAULT_COLORS = {
     '#000000',
   ],
 
-  brand: [
-    '#cccfff',
-    '#c0c3ff',
-    '#27079B',
-    '#4E41F2',
-  ],
+  brand: ['#cccfff', '#c0c3ff', '#27079B', '#4E41F2'],
 
   info: ['#EEEFFF', '#4E41F2', '#27079B'],
 

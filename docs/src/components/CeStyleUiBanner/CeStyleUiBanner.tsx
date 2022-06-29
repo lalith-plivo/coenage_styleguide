@@ -3,15 +3,16 @@ import { Title, Overlay, Text, Button, Group } from '@cestyle/core';
 import { MarkGithubIcon } from '@primer/octicons-react';
 import useStyles from './CeStyleUiBanner.styles';
 
-interface CeStyleUiBannerProps extends React.ComponentPropsWithoutRef<'div'> { }
+interface CeStyleUiBannerProps extends React.ComponentPropsWithoutRef<'div'> {}
 
 export function CeStyleUiBanner({ className, ...others }: CeStyleUiBannerProps) {
   const { classes, cx, theme } = useStyles();
   return (
     <div className={cx(classes.root, className)} {...others}>
       <Overlay
-        gradient={`linear-gradient(45deg, ${theme.colorScheme === 'dark' ? theme.colors.neutral[2] : theme.colors.neutral[2]
-          } 25%, rgba(0, 0, 0, 0) 95%)`}
+        gradient={`linear-gradient(45deg, ${
+          theme.colorScheme === 'dark' ? theme.colors.neutral[2] : theme.colors.neutral[2]
+        } 25%, rgba(0, 0, 0, 0) 95%)`}
         opacity={0.5}
         zIndex={0}
         radius="md"

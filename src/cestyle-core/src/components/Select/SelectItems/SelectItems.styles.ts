@@ -16,8 +16,7 @@ export default createStyles((theme, { size }: SelectItemsStyles) => ({
   },
 
   selected: {
-    backgroundColor:
-      theme.colorScheme === 'dark' ? theme.colors.info[0] : theme.colors.info[0],
+    backgroundColor: theme.colorScheme === 'dark' ? theme.colors.info[0] : theme.colors.info[0],
     color: theme.colorScheme === 'dark' ? theme.black : theme.black,
     fontWeight: theme.fontWeights.medium,
   },

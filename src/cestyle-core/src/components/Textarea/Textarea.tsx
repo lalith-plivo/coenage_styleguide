@@ -14,9 +14,9 @@ import useStyles from './Textarea.styles';
 
 export interface TextareaProps
   extends DefaultProps<TextInputStylesNames>,
-  InputWrapperBaseProps,
-  InputBaseProps,
-  React.ComponentPropsWithoutRef<'textarea'> {
+    InputWrapperBaseProps,
+    InputBaseProps,
+    React.ComponentPropsWithoutRef<'textarea'> {
   /** Id is used to bind input and label, if not passed unique id will be generated for each input */
   id?: string;
 

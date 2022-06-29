@@ -14,7 +14,7 @@ export type CalendarHeaderStylesNames = Selectors<typeof useStyles>;
 
 export interface CalendarHeaderProps
   extends DefaultProps<CalendarHeaderStylesNames>,
-    React.ComponentPropsWithoutRef<'div'> {
+  React.ComponentPropsWithoutRef<'div'> {
   hasPrevious: boolean;
   hasNext: boolean;
   onNext?(): void;
@@ -87,7 +87,6 @@ export function CalendarHeader({
         {!nextLevelDisabled && (
           <SelectChevronIcon
             error={false}
-            size={size}
             className={classes.calendarHeaderLevelIcon}
           />
         )}

@@ -30,15 +30,15 @@ import { SelectSharedProps } from '../Select/Select';
 export type MultiSelectStylesNames =
   | DefaultValueStylesNames
   | Exclude<
-    Selectors<typeof useStyles>,
-    'searchInputEmpty' | 'searchInputInputHidden' | 'searchInputPointer'
-  >
+      Selectors<typeof useStyles>,
+      'searchInputEmpty' | 'searchInputInputHidden' | 'searchInputPointer'
+    >
   | Exclude<BaseSelectStylesNames, 'selected'>;
 
 export interface MultiSelectProps
   extends DefaultProps<MultiSelectStylesNames>,
-  BaseSelectProps,
-  Omit<SelectSharedProps<SelectItem, string[]>, 'filter'> {
+    BaseSelectProps,
+    Omit<SelectSharedProps<SelectItem, string[]>, 'filter'> {
   /** Component used to render values */
   valueComponent?: React.FC<any>;
 

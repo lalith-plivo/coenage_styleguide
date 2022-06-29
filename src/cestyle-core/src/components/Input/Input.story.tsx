@@ -27,8 +27,6 @@ const actionIcon = (
   </ActionIcon>
 );
 
-
-
 const getStates = (props?: any) => (
   <div style={{ maxWidth: 400, padding: 50 }}>
     <Input placeholder="Text" {...props} />
@@ -101,4 +99,4 @@ storiesOf('Input', module)
       })}
     </>
   ))
-  .add('Invalid toggle', () => <ValidInvalid />)
+  .add('Invalid toggle', () => <ValidInvalid />);

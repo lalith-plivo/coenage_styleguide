@@ -1,5 +1,5 @@
 module.exports = {
-  extends: ['cestyle', 'plugin:jest/recommended'],
+  extends: ['mantine', 'plugin:jest/recommended'],
   plugins: ['jest'],
   rules: {
     'jest/no-export': 'off',

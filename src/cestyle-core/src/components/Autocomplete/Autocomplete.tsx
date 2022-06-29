@@ -30,10 +30,10 @@ export interface AutocompleteItem {
 
 export interface AutocompleteProps
   extends DefaultProps<AutocompleteStylesNames>,
-  InputBaseProps,
-  InputWrapperBaseProps,
-  SelectSharedProps<AutocompleteItem, string>,
-  Omit<React.ComponentPropsWithoutRef<'input'>, 'size' | 'onChange' | 'value' | 'defaultValue'> {
+    InputBaseProps,
+    InputWrapperBaseProps,
+    SelectSharedProps<AutocompleteItem, string>,
+    Omit<React.ComponentPropsWithoutRef<'input'>, 'size' | 'onChange' | 'value' | 'defaultValue'> {
   /** Maximum dropdown height */
   maxDropdownHeight?: number | string;
 

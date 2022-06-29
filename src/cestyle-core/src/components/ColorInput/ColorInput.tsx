@@ -29,10 +29,10 @@ export type ColorInputStylesNames =
 
 export interface ColorInputProps
   extends InputWrapperBaseProps,
-  InputBaseProps,
-  ColorPickerBaseProps,
-  DefaultProps<ColorInputStylesNames>,
-  Omit<React.ComponentPropsWithoutRef<'input'>, 'size' | 'onChange' | 'defaultValue' | 'value'> {
+    InputBaseProps,
+    ColorPickerBaseProps,
+    DefaultProps<ColorInputStylesNames>,
+    Omit<React.ComponentPropsWithoutRef<'input'>, 'size' | 'onChange' | 'defaultValue' | 'value'> {
   /** Disallow free input */
   disallowInput?: boolean;
 

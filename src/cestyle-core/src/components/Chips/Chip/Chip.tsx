@@ -17,7 +17,7 @@ export type ChipStylesNames = Selectors<typeof useStyles>;
 
 export interface ChipProps
   extends DefaultProps<ChipStylesNames>,
-  Omit<React.ComponentPropsWithoutRef<'input'>, 'size' | 'onChange'> {
+    Omit<React.ComponentPropsWithoutRef<'input'>, 'size' | 'onChange'> {
   /** Chip radius from theme or number to set value in px */
   radius?: CeStyleNumberSize;
 

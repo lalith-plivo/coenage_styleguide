@@ -17,7 +17,6 @@ export function BooleanControl({ value, label, onChange, ...others }: BooleanCon
   return (
     <Switch
       {...others}
-      size="sm"
       label={splitCamelCase(label)}
       checked={value}
       onChange={(event) => onChange(event.currentTarget.checked)}

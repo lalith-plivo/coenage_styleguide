@@ -5,7 +5,7 @@
     "src/*"
   ],
   "version": "1.0.0",
-  "description": "CeStyle Components Monorepo",
+  "description": "Coenage Styleguide Components Monorepo",
   "main": "index.js",
   "repository": "https://github.com/lalith-plivo/coenage_styleguide.git",
   "author": "Lalith Narayan Kashyap S and Team Coengage <lalith.s@plivo.com>",

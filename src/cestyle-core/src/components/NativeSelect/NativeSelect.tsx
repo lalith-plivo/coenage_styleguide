@@ -20,9 +20,9 @@ export type NativeSelectStylesNames = InputStylesNames | InputWrapperStylesNames
 
 export interface NativeSelectProps
   extends DefaultProps<NativeSelectStylesNames>,
-  InputWrapperBaseProps,
-  InputBaseProps,
-  Omit<React.ComponentPropsWithoutRef<'select'>, 'size'> {
+    InputWrapperBaseProps,
+    InputBaseProps,
+    Omit<React.ComponentPropsWithoutRef<'select'>, 'size'> {
   /** id is used to bind input and label, if not passed unique id will be generated for each input */
   id?: string;
 

@@ -6,7 +6,7 @@ export const DefaultItem: TransferListItemComponent = React.memo(
   ({ data, selected, radius }: TransferListItemComponentProps) => (
     <Checkbox
       checked={selected}
-      onChange={() => { }}
+      onChange={() => {}}
       label={data.label}
       tabIndex={-1}
       sx={{ pointerEvents: 'none' }}

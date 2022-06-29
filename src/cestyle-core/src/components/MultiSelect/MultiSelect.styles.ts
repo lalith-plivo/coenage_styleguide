@@ -42,8 +42,8 @@ export default createStyles((theme, { size, invalid }: MultiSelectStylesParams) 
       color: invalid
         ? theme.colors.danger[theme.colorScheme === 'dark' ? 1 : 1]
         : theme.colorScheme === 'dark'
-          ? theme.typography_light
-          : theme.typography_light,
+        ? theme.typography_light
+        : theme.typography_light,
     },
 
     '&:disabled': {

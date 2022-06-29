@@ -38,7 +38,7 @@ export function getSelectRightSectionProps({
       rightSection: {
         ..._styles?.rightSection,
         pointerEvents: props.shouldClear ? undefined : 'none',
-        right: 9
+        right: 9,
       },
     },
   };

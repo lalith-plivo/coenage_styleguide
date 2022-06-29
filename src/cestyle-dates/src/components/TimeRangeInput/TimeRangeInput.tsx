@@ -24,9 +24,9 @@ export type TimeRangeInputStylesNames =
 
 export interface TimeRangeInputProps
   extends DefaultProps<TimeRangeInputStylesNames>,
-  InputBaseProps,
-  InputWrapperBaseProps,
-  Omit<React.ComponentPropsWithoutRef<'div'>, 'onChange' | 'value' | 'defaultValue'> {
+    InputBaseProps,
+    InputWrapperBaseProps,
+    Omit<React.ComponentPropsWithoutRef<'div'>, 'onChange' | 'value' | 'defaultValue'> {
   /** Input size */
   size?: CeStyleSize;
 

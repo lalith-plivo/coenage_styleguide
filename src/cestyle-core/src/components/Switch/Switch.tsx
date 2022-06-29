@@ -16,7 +16,7 @@ export type SwitchStylesNames = Selectors<typeof useStyles>;
 
 export interface SwitchProps
   extends DefaultProps<SwitchStylesNames>,
-  Omit<React.ComponentPropsWithoutRef<'input'>, 'type' | 'size'> {
+    Omit<React.ComponentPropsWithoutRef<'input'>, 'type' | 'size'> {
   /** Id is used to bind input and label, if not passed unique id will be generated for each input */
   id?: string;
 
@@ -69,7 +69,7 @@ export const Switch = forwardRef<HTMLInputElement, SwitchProps>((props: SwitchPr
   } = useCeStyleDefaultProps('Switch', defaultProps, props);
 
   const { classes, cx } = useStyles(
-    { size: "md", color, radius: 'xl', offLabel, onLabel },
+    { size: 'md', color, radius: 'xl', offLabel, onLabel },
     { classNames, styles, name: 'Switch' }
   );
 

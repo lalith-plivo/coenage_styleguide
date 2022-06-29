@@ -23,10 +23,10 @@ type Parser = (value: string | undefined) => string | undefined;
 
 export interface NumberInputProps
   extends DefaultProps<NumberInputStylesNames>,
-  Omit<
-  React.ComponentPropsWithoutRef<typeof TextInput>,
-  'onChange' | 'value' | 'classNames' | 'styles' | 'type'
-  > {
+    Omit<
+      React.ComponentPropsWithoutRef<typeof TextInput>,
+      'onChange' | 'value' | 'classNames' | 'styles' | 'type'
+    > {
   /** onChange input handler for controlled variant, note that input event is not exposed. It will return undefined if the input is empty, otherwise it'll return a number */
   onChange?(value: number | undefined): void;
 
@@ -134,18 +134,15 @@ export const NumberInput = forwardRef<HTMLInputElement, NumberInputProps>(
       ...others
     } = useCeStyleDefaultProps('NumberInput', defaultProps, props);
 
-    const { classes, cx, theme } = useStyles(
-      {},
-      { classNames, styles, name: 'NumberInput' }
-    );
+    const { classes, cx, theme } = useStyles({}, { classNames, styles, name: 'NumberInput' });
 
     const [focused, setFocused] = useState(false);
     const [_value, setValue] = useState(
       typeof value === 'number'
         ? value
         : typeof defaultValue === 'number'
-          ? defaultValue
-          : undefined
+        ? defaultValue
+        : undefined
     );
     const finalValue = typeof value === 'number' ? value : _value;
     const [tempValue, setTempValue] = useState(

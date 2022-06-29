@@ -15,7 +15,7 @@ export type CheckboxStylesNames = Selectors<typeof useStyles>;
 
 export interface CheckboxProps
   extends DefaultProps<CheckboxStylesNames>,
-  Omit<React.ComponentPropsWithoutRef<'input'>, 'type' | 'size'> {
+    Omit<React.ComponentPropsWithoutRef<'input'>, 'type' | 'size'> {
   // /** Checkbox checked and indeterminate state color from theme, defaults to theme.primaryColor */
   // color?: CeStyleColor;
 

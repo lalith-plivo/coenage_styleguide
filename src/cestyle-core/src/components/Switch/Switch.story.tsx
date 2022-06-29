@@ -15,7 +15,7 @@ function SwitchWrapper(props: Omit<SwitchProps, 'value' | 'onChange'>) {
 }
 
 const sizes = CE_STYLES_SIZES.map((size) => (
-  <Switch color="blue" key={size} size={size} label={`Switch ${size}`} style={{ marginTop: 15 }} />
+  <Switch color="blue" key={size} label={`Switch ${size}`} style={{ marginTop: 15 }} />
 ));
 
 const getThemes = (props?: Partial<SwitchProps>) =>
@@ -32,7 +32,7 @@ const switchWithLabels = [
     color="blue"
     label={`On: ${label.on} Off: ${label.off}`}
     key={label.on}
-    size={label.size as CeStyleSize}
+    // size={label.size as CeStyleSize}
     onLabel={label.on}
     offLabel={label.off}
     style={{ marginTop: 15 }}

@@ -31,16 +31,16 @@ export default createStyles((theme, { size, disabled, radius }: DefaultLabelStyl
         ? theme.colors.neutral[7]
         : theme.colors.neutral[7]
       : theme.colorScheme === 'dark'
-        ? theme.colors.neutral[7]
-        : theme.colors.neutral[7],
+      ? theme.colors.neutral[7]
+      : theme.colors.neutral[7],
     color: disabled
       ? theme.colorScheme === 'dark'
         ? theme.black
         : theme.black
       : theme.colorScheme === 'dark'
-        ? theme.black
-        : theme.black,
-    height: theme.fn.size({ size: "sm", sizes }),
+      ? theme.black
+      : theme.black,
+    height: theme.fn.size({ size: 'sm', sizes }),
     paddingLeft: 10,
     paddingRight: disabled ? theme.fn.size({ size, sizes: theme.spacing }) : 0,
     fontWeight: theme.fontWeights.medium,

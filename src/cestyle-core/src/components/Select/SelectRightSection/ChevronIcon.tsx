@@ -5,7 +5,6 @@ interface ChevronIconProps extends DefaultProps, React.ComponentPropsWithoutRef<
   error: any;
 }
 
-
 export function ChevronIcon({ error, style, ...others }: ChevronIconProps) {
   const theme = useCeStyleTheme();
   return (
@@ -16,7 +15,8 @@ export function ChevronIcon({ error, style, ...others }: ChevronIconProps) {
       fill="none"
       style={{ color: error ? theme.colors.danger[1] : theme.typography_light, ...style }}
       data-chevron
-      {...others}>
+      {...others}
+    >
       <path
         stroke={theme.typography_light}
         strokeLinecap="round"
@@ -25,5 +25,5 @@ export function ChevronIcon({ error, style, ...others }: ChevronIconProps) {
         d="M15.834 7.5L10 13.333 4.167 7.5"
       />
     </svg>
-  )
+  );
 }

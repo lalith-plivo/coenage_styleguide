@@ -18,9 +18,9 @@ import { DefaultValue, DefaultValueStylesNames } from './DefaultValue/DefaultVal
 export type TagInputStylesNames =
   | DefaultValueStylesNames
   | Exclude<
-    Selectors<typeof useStyles>,
-    'tagInputEmpty' | 'tagInputInputHidden' | 'tagInputPointer'
-  >
+      Selectors<typeof useStyles>,
+      'tagInputEmpty' | 'tagInputInputHidden' | 'tagInputPointer'
+    >
   | InputStylesNames
   | InputWrapperStylesNames;
 export interface TagInputProps extends DefaultProps<TagInputStylesNames>, BaseSelectProps {
@@ -119,7 +119,7 @@ export const TagInput = forwardRef<HTMLInputElement, TagInputProps>(
       wrapperProps,
       value,
       defaultValue,
-      onChange = () => { },
+      onChange = () => {},
       valueComponent: Value = DefaultValue,
       id,
       onFocus,
@@ -140,7 +140,7 @@ export const TagInput = forwardRef<HTMLInputElement, TagInputProps>(
       addOnPaste = true,
       pasteSplit = defaultPasteSplit,
       validationRegex = /.*/,
-      onValidationReject = () => { },
+      onValidationReject = () => {},
       onlyUnique = false,
       ...others
     }: TagInputProps,

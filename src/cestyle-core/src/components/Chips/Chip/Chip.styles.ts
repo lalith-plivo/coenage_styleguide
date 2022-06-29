@@ -49,8 +49,9 @@ export default createStyles((theme, { size, color }: ChipStylesParams, getRef) =
     display: 'inline-block',
     alignItems: 'center',
     userSelect: 'none',
-    border: `1px solid ${theme.colorScheme === 'dark' ? theme.colors.dark[3] : theme.colors.gray[4]
-      }`,
+    border: `1px solid ${
+      theme.colorScheme === 'dark' ? theme.colors.dark[3] : theme.colors.gray[4]
+    }`,
     // borderRadius: theme.fn.radius(radius),
     height: theme.fn.size({ size, sizes }),
     fontSize: theme.fn.size({ size, sizes: theme.fontSizes }),
@@ -98,10 +99,12 @@ export default createStyles((theme, { size, color }: ChipStylesParams, getRef) =
   },
 
   disabled: {
-    backgroundColor: `${theme.colorScheme === 'dark' ? theme.colors.dark[5] : theme.colors.gray[1]
-      } !important`,
-    borderColor: `${theme.colorScheme === 'dark' ? theme.colors.dark[5] : theme.colors.gray[1]
-      } !important`,
+    backgroundColor: `${
+      theme.colorScheme === 'dark' ? theme.colors.dark[5] : theme.colors.gray[1]
+    } !important`,
+    borderColor: `${
+      theme.colorScheme === 'dark' ? theme.colors.dark[5] : theme.colors.gray[1]
+    } !important`,
     color: theme.colorScheme === 'dark' ? theme.colors.dark[3] : theme.colors.gray[5],
     cursor: 'not-allowed',
 
@@ -150,9 +153,11 @@ export default createStyles((theme, { size, color }: ChipStylesParams, getRef) =
         outline: 'none',
         boxShadow:
           theme.focusRing === 'always' || theme.focusRing === 'auto'
-            ? `0 0 0 2px ${theme.colorScheme === 'dark' ? theme.colors.dark[9] : theme.white
-            }, 0 0 0 4px ${theme.colors[theme.primaryColor][theme.colorScheme === 'dark' ? 7 : 5]
-            }`
+            ? `0 0 0 2px ${
+                theme.colorScheme === 'dark' ? theme.colors.dark[9] : theme.white
+              }, 0 0 0 4px ${
+                theme.colors[theme.primaryColor][theme.colorScheme === 'dark' ? 7 : 5]
+              }`
             : undefined,
       },
 

@@ -23,7 +23,7 @@ export interface PasswordInputProps
   toggleTabIndex?: -1 | 0;
 
   /** Provide your own visibility toggle icon */
-  visibilityToggleIcon?: React.FC<{ reveal: boolean; size: number }>;
+  visibilityToggleIcon?: React.FC<{ reveal: boolean; }>;
 }
 
 const buttonSizes = {
@@ -101,7 +101,6 @@ export const PasswordInput = forwardRef<HTMLInputElement, PasswordInputProps>(
       <ActionIcon<'button'>
         className={classes.visibilityToggle}
         tabIndex={toggleTabIndex}
-
         size={theme.fn.size({ size, sizes: buttonSizes })}
         aria-hidden
         onMouseDown={(event) => {

@@ -36,12 +36,12 @@ export type DatePickerStylesNames =
 
 export interface DatePickerBaseSharedProps
   extends InputBaseProps,
-  InputWrapperBaseProps,
-  DefaultProps<DatePickerStylesNames>,
-  Omit<
-  React.ComponentPropsWithoutRef<'input'>,
-  'value' | 'defaultValue' | 'placeholder' | 'size'
-  > {
+    InputWrapperBaseProps,
+    DefaultProps<DatePickerStylesNames>,
+    Omit<
+      React.ComponentPropsWithoutRef<'input'>,
+      'value' | 'defaultValue' | 'placeholder' | 'size'
+    > {
   /** Props spread to root element (InputWrapper) */
   wrapperProps?: React.ComponentPropsWithoutRef<'div'>;
 
