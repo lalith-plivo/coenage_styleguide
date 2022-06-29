@@ -13,10 +13,10 @@ export default createStyles((theme, { variant }: TooltipStylesParams) => ({
   body: {
     ...theme.fn.fontStyles(),
     backgroundColor: variant === 'light' ? `${theme.white}` : `${theme.black}`,
-    boxShadow: variant === 'light' ? `${theme.shadows.sm}` : `none`,
+    boxShadow: variant === 'light' ? `${theme.shadows.sm}` : 'none',
     lineHeight: theme.lineHeight,
     fontSize: theme.fontSizes.sm,
-    padding: `6px 12px`,
+    padding: '6px 12px',
     color: variant === 'light' ? `${theme.black}` : `${theme.white}`,
     position: 'relative',
     overflow: 'hidden',
@@ -27,7 +27,7 @@ export default createStyles((theme, { variant }: TooltipStylesParams) => ({
   arrow: {
     border: 0,
     background: variant === 'light' ? `${theme.white}` : `${theme.black}`,
-    boxShadow: variant === 'light' ? `${theme.shadows.sm}` : `none`,
+    boxShadow: variant === 'light' ? `${theme.shadows.sm}` : 'none',
     zIndex: 1,
   },
 }));

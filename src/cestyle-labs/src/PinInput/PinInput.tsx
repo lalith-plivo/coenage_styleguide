@@ -102,7 +102,6 @@ export const PinInput = forwardRef<HTMLDivElement, PinInputProps>(
       manageFocus = true,
       autoFocus = false,
       invalid,
-      radius = 'md',
       disabled,
       oneTimeCode,
       placeholder = '●',
