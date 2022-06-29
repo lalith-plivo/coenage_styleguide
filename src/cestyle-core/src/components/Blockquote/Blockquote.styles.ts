@@ -1,8 +1,10 @@
 import { createStyles } from '@cestyle/styles';
 
-export interface BlockquoteStylesParams {}
+export interface BlockquoteStylesParams {
+  transitionDuration: number;
+}
 
-export default createStyles((theme, {}: BlockquoteStylesParams) => ({
+export default createStyles((theme, { transitionDuration }: BlockquoteStylesParams) => ({
   root: {
     ...theme.fn.fontStyles(),
     fontSize: theme.fontSizes.lg,
@@ -12,6 +14,7 @@ export default createStyles((theme, {}: BlockquoteStylesParams) => ({
     borderTopRightRadius: theme.radius.sm,
     borderBottomRightRadius: theme.radius.sm,
     padding: `${theme.spacing.md}px ${theme.spacing.lg}px`,
+    transition: `transform ${transitionDuration}ms ease`,
   },
 
   inner: {

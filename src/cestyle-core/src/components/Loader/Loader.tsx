@@ -2,7 +2,6 @@ import React from 'react';
 import {
   DefaultProps,
   CeStyleNumberSize,
-  CeStyleColor,
   CeStyleTheme,
   useCeStyleTheme,
   useCeStyleDefaultProps,

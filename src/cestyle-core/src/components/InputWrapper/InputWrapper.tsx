@@ -76,7 +76,7 @@ export const InputWrapper = forwardRef<HTMLDivElement, InputWrapperProps>(
       ...others
     } = useCeStyleDefaultProps('InputWrapper', defaultProps, props);
 
-    const { classes, cx } = useStyles({ size }, { classNames, styles, name: __staticSelector });
+    const { classes, cx } = useStyles({ id }, { classNames, styles, name: __staticSelector });
     const _labelProps = labelElement === 'label' ? { htmlFor: id } : {};
     const inputLabel = createElement(
       labelElement,

@@ -71,6 +71,8 @@ export interface NumberInputProps
 
   /** Parses the value from formatter, should be used with formatter at the same time */
   parser?: Parser;
+
+  type?: string;
 }
 
 const defaultFormatter: Formatter = (value) => value || '';
@@ -131,13 +133,11 @@ export const NumberInput = forwardRef<HTMLInputElement, NumberInputProps>(
       rightSectionWidth,
       formatter,
       parser,
+      type,
       ...others
     } = useCeStyleDefaultProps('NumberInput', defaultProps, props);
 
-    const { classes, cx, theme } = useStyles(
-      { variant },
-      { classNames, styles, name: 'NumberInput' }
-    );
+    const { classes, cx, theme } = useStyles({ type }, { classNames, styles, name: 'NumberInput' });
 
     const [focused, setFocused] = useState(false);
     const [_value, setValue] = useState(

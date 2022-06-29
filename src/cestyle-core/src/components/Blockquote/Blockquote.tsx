@@ -17,18 +17,23 @@ export interface BlockquoteProps
 
   /** Describe a reference to a cited quote */
   cite?: React.ReactNode;
+
+  transitionDuration?: number;
 }
 
 const defaultProps: Partial<BlockquoteProps> = {
-  // color: 'gray',
   icon: <QuoteIcon />,
+  transitionDuration: 100,
 };
 
 export const Blockquote = forwardRef<HTMLQuoteElement, BlockquoteProps>(
   (props: BlockquoteProps, ref) => {
-    const { className, icon, cite, children, classNames, styles, ...others } =
+    const { className, icon, cite, children, classNames, styles, transitionDuration, ...others } =
       useCeStyleDefaultProps('Blockquote', defaultProps, props);
-    const { classes, cx } = useStyles({}, { classNames, styles, name: 'Blockquote' });
+    const { classes, cx } = useStyles(
+      { transitionDuration },
+      { classNames, styles, name: 'Blockquote' }
+    );
 
     return (
       <Box component="blockquote" className={cx(classes.root, className)} ref={ref} {...others}>

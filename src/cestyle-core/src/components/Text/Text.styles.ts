@@ -56,7 +56,6 @@ export default createStyles(
       inline,
       inherit,
       underline,
-
       weight,
       transform,
       align,

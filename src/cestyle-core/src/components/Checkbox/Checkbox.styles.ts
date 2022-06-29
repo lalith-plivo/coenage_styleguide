@@ -1,4 +1,4 @@
-import { createStyles, CeStyleSize, CeStyleColor, CeStyleNumberSize } from '@cestyle/styles';
+import { createStyles } from '@cestyle/styles';
 
 export const sizes = {
   xs: 16,

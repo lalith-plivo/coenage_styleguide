@@ -1,5 +1,4 @@
 import { useBooleanToggle } from '@cestyle/hooks';
-import { CeStyleProvider } from '@cestyle/styles';
 import { MagnifyingGlassIcon } from '@modulz/radix-icons';
 import { storiesOf } from '@storybook/react';
 import React from 'react';

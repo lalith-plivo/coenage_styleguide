@@ -1,8 +1,7 @@
 import { createStyles } from '@cestyle/styles';
 
 export interface NumberInputStylesParams {
-  // radius: CeStyleNumberSize;
-  // size: CeStyleSize;
+  type: string;
 }
 
 export const CONTROL_SIZES = {
@@ -13,7 +12,7 @@ export const CONTROL_SIZES = {
   xl: 36,
 };
 
-export default createStyles((theme, {}: NumberInputStylesParams) => ({
+export default createStyles((theme, { type }: NumberInputStylesParams) => ({
   rightSection: {
     display: 'flex',
     flexDirection: 'column',
@@ -39,6 +38,7 @@ export default createStyles((theme, {}: NumberInputStylesParams) => ({
     borderRight: 0,
     backgroundColor: 'transparent',
     marginRight: 1,
+    type,
 
     '&:not(:disabled):hover': {
       backgroundColor: theme.colorScheme === 'dark' ? theme.colors.dark[6] : theme.colors.gray[0],

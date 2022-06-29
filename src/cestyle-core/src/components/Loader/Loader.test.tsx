@@ -1,7 +1,6 @@
 import React from 'react';
 import { render } from '@testing-library/react';
 import { itSupportsSystemProps } from '@cestyle/tests';
-import { DEFAULT_THEME } from '@cestyle/styles';
 import { Loader, LoaderProps } from './Loader';
 
 const defaultProps: LoaderProps = {};

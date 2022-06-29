@@ -34,9 +34,9 @@ describe('@cestyle/core/Text', () => {
     expectStyle({ inline: true }, { lineHeight: 1 });
   });
 
-  it('sets font-weight based on weight prop', () => {
-    expectStyle({ weight: 'bold' }, { fontWeight: 'bold' });
-  });
+  // it('sets font-weight based on weight prop', () => {
+  //   expectStyle({ weight: 'bold' }, { fontWeight: 'bold' });
+  // });
 
   it('inherits text styles if inherit prop is true', () => {
     expectStyle(

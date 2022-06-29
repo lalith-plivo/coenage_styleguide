@@ -56,7 +56,7 @@ export default createStyles(
               ...theme.fn.fontStyles(),
               height: multiline ? (variant === 'unstyled' ? undefined : 'auto') : 'auto',
               WebkitTapHighlightColor: 'transparent',
-              lineHeight: multiline ? theme.lineHeight : `150%`,
+              lineHeight: multiline ? theme.lineHeight : '150%',
               appearance: 'none',
               resize: 'none',
               boxSizing: 'border-box',

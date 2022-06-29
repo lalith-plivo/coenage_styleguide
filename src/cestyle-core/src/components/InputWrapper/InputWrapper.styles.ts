@@ -1,13 +1,14 @@
-import { createStyles, CeStyleSize } from '@cestyle/styles';
+import { createStyles } from '@cestyle/styles';
 
 export interface InputWrapperStylesParams {
-  size: CeStyleSize;
+  id: string;
 }
 
-export default createStyles((theme, {}: InputWrapperStylesParams) => ({
+export default createStyles((theme, { id }: InputWrapperStylesParams) => ({
   root: {
     ...theme.fn.fontStyles(),
     lineHeight: theme.lineHeight,
+    id,
   },
 
   label: {

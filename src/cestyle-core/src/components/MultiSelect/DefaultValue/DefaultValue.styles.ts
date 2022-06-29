@@ -22,7 +22,7 @@ const fontSizes = {
   xl: 18,
 };
 
-export default createStyles((theme, { size, disabled, radius }: DefaultLabelStyles) => ({
+export default createStyles((theme, { size, disabled }: DefaultLabelStyles) => ({
   defaultValue: {
     display: 'flex',
     alignItems: 'center',
