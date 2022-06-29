@@ -1,0 +1,40 @@
+{
+  "name": "@cestyle/demos",
+  "description": "Demos used in documentation",
+  "private": true,
+  "version": "1.0.0",
+  "main": "cjs/index.js",
+  "module": "esm/index.js",
+  "types": "lib/index.d.ts",
+  "license": "MIT",
+  "author": "Vitaly Rtishchev <rtivital@gmail.com>",
+  "sideEffects": false,
+  "homepage": "https://cestyle.dev",
+  "repository": {
+    "url": "https://github.com/cestyledev/cestyle.git",
+    "type": "git",
+    "directory": "src/cestyle-demos"
+  },
+  "peerDependencies": {
+    "react": "^17.0.2",
+    "@cestyle/core": "1.0.0",
+    "@cestyle/hooks": "1.0.0",
+    "@cestyle/dates": "1.0.0",
+    "@cestyle/form": "1.0.0",
+    "@cestyle/rte": "1.0.0",
+    "@cestyle/modals": "1.0.0",
+    "@cestyle/notifications": "1.0.0",
+    "@cestyle/dropzone": "1.0.0",
+    "@cestyle/prism": "1.0.0",
+    "@cestyle/labs": "1.0.0",
+    "@cestyle/spotlight": "1.0.0",
+    "tabler-icons-react": "*",
+    "react-beautiful-dnd": "*",
+    "dayjs": "*",
+    "zod": "*",
+    "@modulz/radix-icons": "*",
+    "@primer/octicons-react": "*"
+  },
+  "dependencies": {},
+  "devDependencies": {}
+}

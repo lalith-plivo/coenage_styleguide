@@ -1,0 +1,14 @@
+{
+  "name": "@cestyle/storybook",
+  "private": true,
+  "version": "1.0.0",
+  "main": "cjs/index.js",
+  "module": "esm/index.js",
+  "types": "lib/index.d.ts",
+  "license": "MIT",
+  "author": "Vitaly Rtishchev <rtivital@gmail.com>",
+  "keywords": [],
+  "peerDependencies": {},
+  "dependencies": {},
+  "devDependencies": {}
+}

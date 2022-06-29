@@ -1,0 +1,60 @@
+import React, { useState } from 'react';
+import { CeStyleProvider, ColorSchemeProvider, ColorScheme, Global } from '@cestyle/core';
+import { useHotkeys, useLocalStorage } from '@cestyle/hooks';
+import rtlPlugin from 'stylis-plugin-rtl';
+import { LayoutInner, LayoutProps } from './LayoutInner';
+import { DirectionContext } from './DirectionContext';
+import { InterFonts } from '../../fonts/Inter/Inter';
+
+const THEME_KEY = 'cestyle-color-scheme';
+
+export default function Layout({ children, location }: LayoutProps) {
+  const [dir, setDir] = useState<'ltr' | 'rtl'>('ltr');
+  const [colorScheme, setColorScheme] = useLocalStorage<ColorScheme>({
+    key: THEME_KEY,
+    defaultValue: 'light',
+    getInitialValueInEffect: true,
+  });
+
+  const toggleColorScheme = (value?: ColorScheme) =>
+    setColorScheme(value || (colorScheme === 'dark' ? 'light' : 'dark'));
+
+  const toggleDirection = () => setDir((current) => (current === 'rtl' ? 'ltr' : 'rtl'));
+
+  useHotkeys([
+    ['mod+J', () => toggleColorScheme()],
+    ['mod + shift + L', () => toggleDirection()],
+  ]);
+
+  return (
+    <DirectionContext.Provider value={{ dir, toggleDirection }}>
+      <ColorSchemeProvider colorScheme={colorScheme} toggleColorScheme={toggleColorScheme}>
+        <InterFonts />
+        <CeStyleProvider
+          withGlobalStyles
+          withNormalizeCSS
+          theme={{
+            dir,
+            colorScheme,
+            headings: { fontFamily: 'Inter, sans serif' },
+          }}
+          emotionOptions={
+            dir === 'rtl' ? { key: 'cestyle-rtl', stylisPlugins: [rtlPlugin] } : { key: 'cestyle' }
+          }
+        >
+          <Global
+            styles={(theme) => ({
+              body: {
+                color: theme.colorScheme === 'dark' ? theme.colors.dark[1] : theme.colors.gray[8],
+                fontSize: 15,
+              },
+            })}
+          />
+          <div dir={dir}>
+            <LayoutInner location={location}>{children}</LayoutInner>
+          </div>
+        </CeStyleProvider>
+      </ColorSchemeProvider>
+    </DirectionContext.Provider>
+  );
+}

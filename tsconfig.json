@@ -1,0 +1,29 @@
+{
+  "extends": "./tsconfig.base.json",
+  "include": [
+    "src/cestyle-*/src",
+    "src/cestyle-*/demos",
+    "./types",
+    "./docs/src",
+    "./scripts",
+    "./configuration",
+    "./configuration/types",
+    "./tests"
+  ],
+  "exclude": [
+    "public",
+    ".cache",
+    "configuration/jest",
+    "configuration/storybook/main.js",
+    "node_modules",
+    "src/cestyle-*/esm/**/*",
+    "src/cestyle-*/lib/**/*",
+    "src/cestyle-*/cjs/**/*"
+  ],
+  "compilerOptions": {
+    "paths": {
+      "@cestyle/*": ["src/cestyle-*/src"],
+      "@demos/*": ["src/cestyle-*/src/demos"]
+    }
+  }
+}

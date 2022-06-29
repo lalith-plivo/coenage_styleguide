@@ -1,0 +1,38 @@
+{
+  "extends": "../../tsconfig.base.json",
+  "include": ["./src", "./types", "../../configuration/types"],
+  "exclude": ["./lib", "./esm", "./cjs"],
+  "compilerOptions": {
+    "rootDir": "src",
+    "baseUrl": ".",
+    "outDir": "lib",
+    "declaration": true,
+    "declarationMap": true,
+    "declarationDir": "lib",
+    "composite": true,
+    "paths": {
+      "@cestyle/core": ["../cestyle-core/src"],
+      "@cestyle/dates": ["../cestyle-dates/src"],
+      "@cestyle/hooks": ["../cestyle-hooks/src"],
+      "@cestyle/prism": ["../cestyle-prism/src"],
+      "@cestyle/dropzone": ["../cestyle-dropzone/src"],
+      "@cestyle/spotlight": ["../cestyle-spotlight/src"],
+      "@cestyle/notifications": ["../cestyle-notifications/src"],
+      "@cestyle/modals": ["../cestyle-modals/src"],
+      "@cestyle/rte": ["../cestyle-rte/src"],
+      "@cestyle/storybook": ["../cestyle-storybook/src"]
+    }
+  },
+  "references": [
+    { "path": "../cestyle-core" },
+    { "path": "../cestyle-dates" },
+    { "path": "../cestyle-hooks" },
+    { "path": "../cestyle-prism" },
+    { "path": "../cestyle-dropzone" },
+    { "path": "../cestyle-notifications" },
+    { "path": "../cestyle-modals" },
+    { "path": "../cestyle-spotlight" },
+    { "path": "../cestyle-rte" },
+    { "path": "../cestyle-storybook" }
+  ]
+}

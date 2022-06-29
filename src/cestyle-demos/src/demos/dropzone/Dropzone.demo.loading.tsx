@@ -1,0 +1,24 @@
+import React from 'react';
+import { BaseDemo } from './_base';
+
+const code = `
+import { Dropzone } from '@cestyle/dropzone';
+
+function Demo() {
+  return (
+    <Dropzone loading>
+      {/* children */}
+    </Dropzone>
+  );
+}
+`;
+
+function Demo() {
+  return <BaseDemo loading />;
+}
+
+export const loading: CeStyleDemo = {
+  type: 'demo',
+  component: Demo,
+  code,
+};

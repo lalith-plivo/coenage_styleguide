@@ -1,0 +1,31 @@
+{
+  "name": "@cestyle/next",
+  "description": "CeStyle integration for Next.js",
+  "version": "1.0.0",
+  "main": "cjs/index.js",
+  "module": "esm/index.js",
+  "types": "lib/index.d.ts",
+  "license": "MIT",
+  "author": "Vitaly Rtishchev <rtivital@gmail.com>",
+  "sideEffects": false,
+  "homepage": "https://cestyle.dev",
+  "repository": {
+    "url": "https://github.com/cestyledev/cestyle.git",
+    "type": "git",
+    "directory": "src/cestyle-ssr"
+  },
+  "keywords": [
+    "react",
+    "next",
+    "nextjs"
+  ],
+  "peerDependencies": {
+    "react": ">=16.8.0",
+    "react-dom": ">=16.8.0",
+    "next": "*"
+  },
+  "dependencies": {
+    "@cestyle/ssr": "1.0.0"
+  },
+  "devDependencies": {}
+}

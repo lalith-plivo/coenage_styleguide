@@ -1,0 +1,26 @@
+---
+group: 'cestyle-hooks'
+package: '@cestyle/hooks'
+title: 'use-force-update'
+category: 'lifecycle'
+order: 1
+slug: /hooks/use-force-update/
+description: 'Force component to render without state change'
+import: "import { useForceUpdate } from '@cestyle/hooks';"
+docs: 'hooks/use-force-update.mdx'
+source: 'cestyle-hooks/src/use-force-update/use-force-update.ts'
+---
+
+import { HooksDemos } from '@cestyle/demos';
+
+## Usage
+
+use-force-update returns a function, which when called rerenders the component:
+
+<Demo data={HooksDemos.useForceUpdateDemo} />
+
+## Definition
+
+```tsx
+function useForceUpdate(): () => void;
+```

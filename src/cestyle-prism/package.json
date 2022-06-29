@@ -1,0 +1,41 @@
+{
+  "name": "@cestyle/prism",
+  "description": "Code highlight with CeStyle theme",
+  "version": "1.0.0",
+  "main": "cjs/index.js",
+  "module": "esm/index.js",
+  "types": "lib/index.d.ts",
+  "license": "MIT",
+  "author": "Vitaly Rtishchev <rtivital@gmail.com>",
+  "sideEffects": false,
+  "homepage": "https://cestyle.dev/others/prism/",
+  "repository": {
+    "url": "https://github.com/cestyledev/cestyle.git",
+    "type": "git",
+    "directory": "src/cestyle-prism"
+  },
+  "keywords": [
+    "react",
+    "next",
+    "nextjs",
+    "ui",
+    "components",
+    "ui-kit",
+    "library",
+    "frontend",
+    "code",
+    "highlight",
+    "syntax",
+    "syntax-highlight"
+  ],
+  "peerDependencies": {
+    "@cestyle/core": "1.0.0",
+    "@cestyle/hooks": "1.0.0",
+    "react": ">=16.8.0",
+    "react-dom": ">=16.8.0"
+  },
+  "dependencies": {
+    "prism-react-renderer": "^1.2.1"
+  },
+  "devDependencies": {}
+}

@@ -1,0 +1,25 @@
+---
+group: 'cestyle-core'
+package: '@cestyle/core'
+title: Stack
+order: 1
+slug: /core/stack/
+category: 'layout'
+description: 'Compose elements and components in vertical flex container'
+props: ['Stack']
+import: "import { Stack } from '@cestyle/core';"
+source: 'cestyle-core/src/components/Stack/Stack.tsx'
+docs: 'core/Stack.mdx'
+styles: ['Stack', 'single-node']
+---
+
+import { StackDemos } from '@cestyle/demos';
+
+## Usage
+
+<Demo data={StackDemos.configurator} />
+
+## Browser support
+
+Stack uses [flexbox gap](https://caniuse.com/flexbox-gap) to add spacing between children.
+In older browsers Stack children will not have spacing.

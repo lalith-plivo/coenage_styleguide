@@ -1,0 +1,31 @@
+import React from 'react';
+import { Menu, Group } from '@cestyle/core';
+import { menuItems } from './_menu-items';
+
+const code = `
+import { Menu } from '@cestyle/core';
+
+function Demo() {
+  return (
+    <Menu trigger="hover" delay={500}>
+      {/* ... menu items */}
+    </Menu>
+  );
+}
+`;
+
+function Demo() {
+  return (
+    <Group position="center">
+      <Menu trigger="hover" delay={500}>
+        {menuItems}
+      </Menu>
+    </Group>
+  );
+}
+
+export const hover: CeStyleDemo = {
+  type: 'demo',
+  code,
+  component: Demo,
+};

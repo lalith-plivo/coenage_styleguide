@@ -1,0 +1,24 @@
+import React from 'react';
+import { DatePicker } from '@cestyle/dates';
+
+const code = `
+import { DatePicker } from '@cestyle/dates';
+
+function Demo() {
+  return <DatePicker clearable={false} placeholder="Pick date" label="Event date" />;
+}
+`;
+
+function Demo() {
+  return (
+    <div style={{ maxWidth: 340, marginLeft: 'auto', marginRight: 'auto' }}>
+      <DatePicker placeholder="Pick date" label="Event date" clearable={false} />
+    </div>
+  );
+}
+
+export const notClearable: CeStyleDemo = {
+  type: 'demo',
+  code,
+  component: Demo,
+};

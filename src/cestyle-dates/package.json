@@ -1,0 +1,33 @@
+{
+  "name": "@cestyle/dates",
+  "description": "Calendars, date and time pickers based on CeStyle components",
+  "version": "1.0.0",
+  "main": "cjs/index.js",
+  "module": "esm/index.js",
+  "types": "lib/index.d.ts",
+  "license": "MIT",
+  "author": "Vitaly Rtishchev <rtivital@gmail.com>",
+  "homepage": "https://cestyle.dev/dates/getting-started/",
+  "keywords": [
+    "react",
+    "next",
+    "nextjs",
+    "ui",
+    "components",
+    "ui-kit",
+    "library",
+    "frontend",
+    "calendar",
+    "date",
+    "time",
+    "picker"
+  ],
+  "peerDependencies": {
+    "@cestyle/core": "1.0.0",
+    "@cestyle/hooks": "1.0.0",
+    "dayjs": "^1.10.5",
+    "react": ">=16.8.0"
+  },
+  "dependencies": {},
+  "devDependencies": {}
+}

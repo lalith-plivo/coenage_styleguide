@@ -1,0 +1,24 @@
+{
+  "name": "@cestyle/styles-api",
+  "description": "CeStyle components styles api descriptions",
+  "private": true,
+  "version": "1.0.0",
+  "main": "cjs/index.js",
+  "module": "esm/index.js",
+  "types": "lib/index.d.ts",
+  "license": "MIT",
+  "author": "Vitaly Rtishchev <rtivital@gmail.com>",
+  "sideEffects": false,
+  "homepage": "https://cestyle.dev",
+  "repository": {
+    "url": "https://github.com/cestyledev/cestyle.git",
+    "type": "git",
+    "directory": "src/cestyle-styles-api"
+  },
+  "peerDependencies": {
+    "@cestyle/core": "1.0.0",
+    "@cestyle/hooks": "1.0.0"
+  },
+  "dependencies": {},
+  "devDependencies": {}
+}
