@@ -30,7 +30,7 @@ function Demo() {
           borderColor: theme.colorScheme === 'dark' ? theme.colors.dark[3] : theme.colors.blue[1],
         },
         markFilled: {
-          borderColor: theme.colors.blue[6],
+          borderColor: theme.colors.brand[2],
         },
         markLabel: { fontSize: theme.fontSizes.xs, marginBottom: 5, marginTop: 0 },
         thumb: {
@@ -75,7 +75,7 @@ function Demo() {
             borderColor: theme.colorScheme === 'dark' ? theme.colors.dark[3] : theme.colors.blue[1],
           },
           markFilled: {
-            borderColor: theme.colors.blue[6],
+            borderColor: theme.colors.brand[2],
           },
           markLabel: { fontSize: theme.fontSizes.xs, marginBottom: 5, marginTop: 0 },
           thumb: {

@@ -5,7 +5,7 @@ export default [
   {
     to: '/getting-started/',
     label: 'Getting Started',
-    theme: DEFAULT_THEME.colors.blue[6],
+    theme: DEFAULT_THEME.colors.brand[2],
     icon: RocketIcon,
   },
   {

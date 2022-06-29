@@ -23,7 +23,7 @@ function Demo() {
 
   return (
     <Accordion state={state} onChange={handlers.setState} disableIconRotation>
-      <Accordion.Item label="Personal information" icon={<User color={theme.colors.blue[6]} />}>
+      <Accordion.Item label="Personal information" icon={<User color={theme.colors.brand[2]} />}>
         <SimpleGrid cols={2} breakpoints={breakpoints}>
           <TextInput label="Email" placeholder="Email" required />
           <TextInput label="Full name" placeholder="Full name" required />
@@ -84,7 +84,7 @@ function Demo() {
 
   return (
     <Accordion state={state} onChange={handlers.setState} disableIconRotation>
-      <Accordion.Item label="Personal information" icon={<User color={theme.colors.blue[6]} />}>
+      <Accordion.Item label="Personal information" icon={<User color={theme.colors.brand[2]} />}>
         <SimpleGrid cols={2} breakpoints={breakpoints}>
           <TextInput label="Email" placeholder="Email" required />
           <TextInput label="Full name" placeholder="Full name" required />

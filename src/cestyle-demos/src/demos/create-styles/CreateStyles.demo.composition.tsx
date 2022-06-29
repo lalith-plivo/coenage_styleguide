@@ -10,7 +10,7 @@ const useStyles = createStyles((theme, _params, getRef) => ({
     ref: getRef('button'),
 
     // and add any other properties
-    backgroundColor: theme.colors.blue[6],
+    backgroundColor: theme.colors.brand[2],
     color: theme.white,
     padding: \`\${theme.spacing.sm}px \${theme.spacing.lg}px\`,
     borderRadius: theme.radius.md,
@@ -49,7 +49,7 @@ const useStyles = createStyles((theme, _params, getRef) => ({
     ref: getRef('button'),
 
     // and add any other properties
-    backgroundColor: theme.colors.blue[6],
+    backgroundColor: theme.colors.brand[2],
     color: theme.white,
     padding: `${theme.spacing.sm}px ${theme.spacing.lg}px`,
     borderRadius: theme.radius.md,

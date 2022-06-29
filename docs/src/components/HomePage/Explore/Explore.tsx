@@ -1,14 +1,12 @@
-import { Container } from '@cestyle/core';
 import React from 'react';
+import { Container } from '@cestyle/core';
 import { SectionTitle } from '../SectionTitle/SectionTitle';
-import { CoreComponents } from './CoreComponents/CoreComponents';
-import { Theming } from './Theming/Theming';
-import { DarkTheme } from './DarkTheme/DarkTheme';
-import { Hooks } from './Hooks/Hooks';
-import { RichText } from './RichText/RichText';
 import { Animations } from './Animations/Animations';
-import { Notifications } from './Notifications/Notifications';
+import { CoreComponents } from './CoreComponents/CoreComponents';
 import useStyles from './Explore.styles';
+import { Hooks } from './Hooks/Hooks';
+import { Notifications } from './Notifications/Notifications';
+import { RichText } from './RichText/RichText';
 
 export function Explore() {
   const { classes, cx } = useStyles();

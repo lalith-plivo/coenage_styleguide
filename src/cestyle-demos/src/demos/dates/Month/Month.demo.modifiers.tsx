@@ -12,7 +12,7 @@ const useStyles = createStyles((theme) => ({
   },
 
   weekend: {
-    color: \`\${theme.colors.blue[6]} !important\`,
+    color: \`\${theme.colors.brand[2]} !important\`,
   },
 }));
 
@@ -37,7 +37,7 @@ const useStyles = createStyles((theme) => ({
   },
 
   weekend: {
-    color: `${theme.colors.blue[6]} !important`,
+    color: `${theme.colors.brand[2]} !important`,
   },
 }));
 

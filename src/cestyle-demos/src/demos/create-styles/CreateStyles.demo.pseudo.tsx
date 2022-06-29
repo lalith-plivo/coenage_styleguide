@@ -7,7 +7,7 @@ import { createStyles } from '@cestyle/core';
 const useStyles = createStyles((theme) => ({
   button: {
     color: theme.white,
-    backgroundColor: theme.colors.blue[6],
+    backgroundColor: theme.colors.brand[2],
     border: 0,
     borderRadius: theme.radius.md,
     padding: \`\${theme.spacing.sm}px \${theme.spacing.lg}px\`,
@@ -51,7 +51,7 @@ function Demo() {
 const useStyles = createStyles((theme) => ({
   button: {
     color: theme.white,
-    backgroundColor: theme.colors.blue[6],
+    backgroundColor: theme.colors.brand[2],
     border: 0,
     borderRadius: theme.radius.md,
     padding: `${theme.spacing.sm}px ${theme.spacing.lg}px`,

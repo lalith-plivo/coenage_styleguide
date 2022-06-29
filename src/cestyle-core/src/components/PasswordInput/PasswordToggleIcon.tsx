@@ -8,9 +8,7 @@ export type PasswordInputVisibilityToggleIcon = React.FC<PasswordToggleIconProps
 
 export const PasswordToggleIcon: PasswordInputVisibilityToggleIcon = ({
   reveal,
-}:
-  PasswordToggleIconProps) => (
-
+}: PasswordToggleIconProps) => (
   <svg xmlns="http://www.w3.org/2000/svg" width="19" height="20" fill="none">
     {reveal ? (
       <>

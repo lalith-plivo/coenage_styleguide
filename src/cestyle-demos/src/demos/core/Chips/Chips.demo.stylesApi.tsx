@@ -10,7 +10,7 @@ const useStyles = createStyles((theme, _params, getRef) => ({
   },
 
   checked: {
-    backgroundColor: \`\${theme.colors.blue[6]} !important\`,
+    backgroundColor: \`\${theme.colors.brand[2]} !important\`,
     color: theme.white,
 
     [\`& .\${getRef('iconWrapper')}\`]: {
@@ -39,7 +39,7 @@ const useStyles = createStyles((theme, _params, getRef) => ({
   },
 
   checked: {
-    backgroundColor: `${theme.colors.blue[6]} !important`,
+    backgroundColor: `${theme.colors.brand[2]} !important`,
     color: theme.white,
 
     [`& .${getRef('iconWrapper')}`]: {

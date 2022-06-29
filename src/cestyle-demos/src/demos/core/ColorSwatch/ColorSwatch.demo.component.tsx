@@ -13,7 +13,7 @@ function Demo() {
 
   return (
     <Group position="center" spacing="xs">
-      <ColorSwatch component="a" href="https://cestyle.dev" color={theme.colors.blue[6]} />
+      <ColorSwatch component="a" href="https://cestyle.dev" color={theme.colors.brand[2]} />
       <ColorSwatch
         component="button"
         color={theme.colors.grape[6]}
@@ -33,7 +33,7 @@ function Demo() {
 
   return (
     <Group position="center" spacing="xs">
-      <ColorSwatch component="a" href="https://cestyle.dev" color={theme.colors.blue[6]} />
+      <ColorSwatch component="a" href="https://cestyle.dev" color={theme.colors.brand[2]} />
       <ColorSwatch
         component="button"
         color={theme.colors.grape[6]}

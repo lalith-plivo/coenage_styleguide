@@ -13,7 +13,7 @@ function Demo() {
         ? theme.fn.rgba(theme.colors.blue[7], 0.25)
         : theme.colors.blue[0],
     border: \`1px solid \${
-      theme.colorScheme === 'dark' ? theme.colors.blue[6] : theme.colors.blue[3]
+      theme.colorScheme === 'dark' ? theme.colors.brand[2] : theme.colors.blue[3]
     }\`,
   };
 
@@ -51,7 +51,7 @@ function Demo() {
         ? theme.fn.rgba(theme.colors.blue[7], 0.25)
         : theme.colors.blue[0],
     border: `1px solid ${
-      theme.colorScheme === 'dark' ? theme.colors.blue[6] : theme.colors.blue[3]
+      theme.colorScheme === 'dark' ? theme.colors.brand[2] : theme.colors.blue[3]
     }`,
   };
 

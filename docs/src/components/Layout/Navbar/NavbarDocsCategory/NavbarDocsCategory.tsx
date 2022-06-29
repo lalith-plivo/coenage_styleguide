@@ -1,12 +1,12 @@
-import React, { useState, useRef, useEffect } from 'react';
-import { Link } from 'gatsby';
-import { ChevronDownIcon } from '@modulz/radix-icons';
+import React, { useEffect, useRef, useState } from 'react';
 import { Text } from '@cestyle/core';
-import { useViewportSize } from '@cestyle/hooks';
+import { ChevronDownIcon } from '@modulz/radix-icons';
 import { useLocation } from '@reach/router';
+import { Link } from 'gatsby';
+
 import { getDocsData } from '../../get-docs-data';
-import useStyles from './NavbarDocsCategory.styles';
 import { HEADER_HEIGHT } from '../../Header/Header.styles';
+import useStyles from './NavbarDocsCategory.styles';
 
 interface NavbarDocsCategoryProps {
   group: ReturnType<typeof getDocsData>[number];

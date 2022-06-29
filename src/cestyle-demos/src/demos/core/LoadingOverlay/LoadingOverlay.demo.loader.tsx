@@ -12,7 +12,7 @@ const customLoader = (
     height="54"
     viewBox="0 0 38 38"
     xmlns="http://www.w3.org/2000/svg"
-    stroke={DEFAULT_THEME.colors.blue[6]}
+    stroke={DEFAULT_THEME.colors.brand[2]}
   >
     <g fill="none" fillRule="evenodd">
       <g transform="translate(1 1)" strokeWidth="2">
@@ -43,7 +43,7 @@ const customLoader = (
     height="54"
     viewBox="0 0 38 38"
     xmlns="http://www.w3.org/2000/svg"
-    stroke={DEFAULT_THEME.colors.blue[6]}
+    stroke={DEFAULT_THEME.colors.brand[2]}
   >
     <g fill="none" fillRule="evenodd">
       <g transform="translate(1 1)" strokeWidth="2">

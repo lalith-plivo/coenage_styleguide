@@ -1,10 +1,9 @@
 import React from 'react';
-import { Container, Text, Group } from '@cestyle/core';
+import { Container, Group, Text } from '@cestyle/core';
 import { Logo } from '../Logo/Logo';
-import { SocialButton } from '../SocialButton/SocialButton';
-import { LinksGroup } from './LinksGroup/LinksGroup';
 import { FOOTER_LINKS_DATA } from './data';
 import useStyles from './Footer.styles';
+import { LinksGroup } from './LinksGroup/LinksGroup';
 
 interface FooterProps {
   withNavbar?: boolean;

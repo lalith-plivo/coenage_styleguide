@@ -17,8 +17,8 @@ function Demo() {
             message: 'Hey there, your code is awesome! 🤥',
             styles: (theme) => ({
               root: {
-                backgroundColor: theme.colors.blue[6],
-                borderColor: theme.colors.blue[6],
+                backgroundColor: theme.colors.brand[2],
+                borderColor: theme.colors.brand[2],
 
                 '&::before': { backgroundColor: theme.white },
               },
@@ -50,8 +50,8 @@ function Demo() {
             message: 'Hey there, your code is awesome! 🤥',
             styles: (theme) => ({
               root: {
-                backgroundColor: theme.colors.blue[6],
-                borderColor: theme.colors.blue[6],
+                backgroundColor: theme.colors.brand[2],
+                borderColor: theme.colors.brand[2],
 
                 '&::before': { backgroundColor: theme.white },
               },

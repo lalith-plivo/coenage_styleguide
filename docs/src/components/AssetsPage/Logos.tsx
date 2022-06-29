@@ -1,13 +1,10 @@
 /* eslint-disable import/no-webpack-loader-syntax */
-import React from 'react';
-import { SimpleGrid, Button, Group, createStyles, DEFAULT_THEME } from '@cestyle/core';
+import { Button, createStyles, Group, SimpleGrid } from '@cestyle/core';
 import { useClipboard } from '@cestyle/hooks';
+import React from 'react';
 
 import fullLogoCode from '!!raw-loader!./assets/cestyle-logo-full.svg';
 import fullLogoImage from './assets/cestyle-logo-full.svg';
-
-import whiteLogoCode from '!!raw-loader!./assets/cestyle-logo-white.svg';
-import whiteLogoImage from './assets/cestyle-logo-white.svg';
 
 import logoCode from '!!raw-loader!./assets/cestyle-logo.svg';
 import logoImage from './assets/cestyle-logo.svg';

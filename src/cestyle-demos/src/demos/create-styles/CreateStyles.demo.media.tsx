@@ -7,7 +7,7 @@ import { createStyles } from '@cestyle/core';
 const useStyles = createStyles((theme) => ({
   container: {
     height: 100,
-    backgroundColor: theme.colors.blue[6],
+    backgroundColor: theme.colors.brand[2],
 
     // Media query with value from theme
     [\`@media (max-width: \${theme.breakpoints.xl}px)\`]: {
@@ -30,7 +30,7 @@ function Demo() {
 const useStyles = createStyles((theme) => ({
   container: {
     height: 100,
-    backgroundColor: theme.colors.blue[6],
+    backgroundColor: theme.colors.brand[2],
 
     // Media query with value from theme
     [`@media (max-width: ${theme.breakpoints.xl}px)`]: {

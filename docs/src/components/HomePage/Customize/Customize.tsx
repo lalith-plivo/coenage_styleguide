@@ -16,7 +16,7 @@ const code = `
   styles={(theme) => ({
     track: { '&::before': { backgroundColor: theme.colorScheme === 'dark' ? theme.colors.dark[3] : theme.colors.blue[1] } },
     mark: { width: 6, height: 6, borderRadius: 6, transform: 'translateX(-3px) translateY(-2px)', borderColor: theme.colorScheme === 'dark' ? theme.colors.dark[3] : theme.colors.blue[1] },
-    markFilled: { borderColor: theme.colors.blue[6] },
+    markFilled: { borderColor: theme.colors.brand[2] },
     markLabel: { fontSize: theme.fontSizes.xs, marginBottom: 5, marginTop: 0 },
     thumb: { height: 16, width: 16, backgroundColor: theme.white, borderWidth: 1, boxShadow: theme.shadows.sm },
   })}
@@ -80,7 +80,7 @@ export function Customize() {
                   theme.colorScheme === 'dark' ? theme.colors.dark[3] : theme.colors.blue[1],
               },
               markFilled: {
-                borderColor: theme.colors.blue[6],
+                borderColor: theme.colors.brand[2],
               },
               markLabel: { fontSize: theme.fontSizes.xs, marginBottom: 5, marginTop: 0 },
               thumb: {

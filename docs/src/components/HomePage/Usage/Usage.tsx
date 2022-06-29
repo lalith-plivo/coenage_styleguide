@@ -1,21 +1,21 @@
 import React from 'react';
 import { Text, SimpleGrid } from '@cestyle/core';
 import { Link } from 'gatsby';
-import { GUIDES_DATA } from '../../GettingStarted/Guides/data';
+// import { GUIDES_DATA } from '../../GettingStarted/Guides/data';
 import { PageSection } from '../PageSection/PageSection';
 import useStyles from './Usage.styles';
 
 export function Usage() {
   const { classes } = useStyles();
-  const guides = GUIDES_DATA.map((guide) => {
-    const Icon = guide.icon;
-    return (
-      <Link className={classes.guide} key={guide.id} to={`/getting-started?g=${guide.id}`}>
-        <Icon />
-        <Text className={classes.guideTitle}>{guide.title}</Text>
-      </Link>
-    );
-  });
+  // const guides = GUIDES_DATA.map((guide) => {
+  //   const Icon = guide.icon;
+  //   return (
+  //     <Link className={classes.guide} key={guide.id} to={`/getting-started?g=${guide.id}`}>
+  //       <Icon />
+  //       <Text className={classes.guideTitle}>{guide.title}</Text>
+  //     </Link>
+  //   );
+  // });
 
   return (
     <PageSection
@@ -30,7 +30,7 @@ export function Usage() {
           { maxWidth: 755, cols: 1 },
         ]}
       >
-        {guides}
+        {/* {guides} */}
       </SimpleGrid>
     </PageSection>
   );

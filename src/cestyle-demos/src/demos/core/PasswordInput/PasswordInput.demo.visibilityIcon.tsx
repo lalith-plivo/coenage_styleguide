@@ -27,9 +27,7 @@ function Demo() {
         label="Change visibility toggle icon"
         placeholder="Change visibility toggle icon"
         defaultValue="secret"
-        visibilityToggleIcon={({ reveal }) =>
-          reveal ? <EyeOff /> : <EyeCheck />
-        }
+        visibilityToggleIcon={({ reveal }) => (reveal ? <EyeOff /> : <EyeCheck />)}
       />
     </div>
   );
