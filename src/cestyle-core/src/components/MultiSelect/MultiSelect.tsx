@@ -596,7 +596,6 @@ export const MultiSelect = forwardRef<HTMLInputElement, MultiSelectProps>(
               rightSection,
               rightSectionWidth,
               styles,
-              size,
               shouldClear: clearable && _value.length > 0,
               clearButtonLabel,
               onClear: handleClear,

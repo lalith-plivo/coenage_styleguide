@@ -9,7 +9,7 @@ export default createStyles((theme, { size }: SelectItemsStyles) => ({
     boxSizing: 'border-box',
     textAlign: 'left',
     width: '100%',
-    padding: `8px 20px`,
+    padding: '8px 20px',
     cursor: 'pointer',
     fontSize: theme.fn.size({ size: 'sm', sizes: theme.fontSizes }),
     color: theme.colorScheme === 'dark' ? theme.typography_light : theme.typography_light,

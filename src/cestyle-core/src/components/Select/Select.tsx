@@ -613,7 +613,6 @@ export const Select = forwardRef<HTMLInputElement, SelectProps>((props: SelectPr
             rightSection,
             rightSectionWidth,
             styles,
-            size,
             shouldClear: clearable && !!selectedValue,
             clearButtonLabel,
             onClear: handleClear,

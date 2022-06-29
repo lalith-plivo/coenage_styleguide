@@ -4,7 +4,6 @@ import {
   DefaultProps,
   CeStyleNumberSize,
   CeStyleSize,
-  CeStyleColor,
   Selectors,
   extractSystemStyles,
   useCeStyleDefaultProps,

@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { storiesOf } from '@storybook/react';
-import { DEFAULT_THEME, CeStyleSize, CE_STYLES_SIZES } from '@cestyle/styles';
+import { DEFAULT_THEME, CE_STYLES_SIZES } from '@cestyle/styles';
 import { Switch, SwitchProps } from './Switch';
 
 function SwitchWrapper(props: Omit<SwitchProps, 'value' | 'onChange'>) {

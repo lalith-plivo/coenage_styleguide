@@ -134,7 +134,6 @@ export const NativeSelect = forwardRef<HTMLSelectElement, NativeSelectProps>(
             rightSectionWidth,
             styles,
             shouldClear: false,
-            size,
             error,
           })}
         >

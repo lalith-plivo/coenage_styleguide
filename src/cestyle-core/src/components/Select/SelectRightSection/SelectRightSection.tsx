@@ -1,5 +1,4 @@
 import React from 'react';
-import { CeStyleSize } from '@cestyle/styles';
 import { CloseButton } from '../../ActionIcon/CloseButton/CloseButton';
 import { ChevronIcon } from './ChevronIcon';
 
@@ -7,7 +6,7 @@ export interface SelectRightSectionProps {
   shouldClear: boolean;
   clearButtonLabel?: string;
   onClear?: () => void;
-  size: CeStyleSize;
+  // size: CeStyleSize;
   error?: any;
   // eslint-disable-next-line react/no-unused-prop-types
   disabled?: boolean;

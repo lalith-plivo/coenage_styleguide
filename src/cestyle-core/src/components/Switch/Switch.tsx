@@ -2,9 +2,6 @@ import React, { forwardRef } from 'react';
 import { useUuid } from '@cestyle/hooks';
 import {
   DefaultProps,
-  CeStyleNumberSize,
-  CeStyleSize,
-  CeStyleColor,
   Selectors,
   extractSystemStyles,
   useCeStyleDefaultProps,

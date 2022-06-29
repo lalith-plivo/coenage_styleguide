@@ -3,8 +3,6 @@ import { createStyles } from '@cestyle/styles';
 export type InputVariant = 'default' | 'filled' | 'unstyled' | 'headless';
 
 export interface InputStylesParams {
-  // radius: CeStyleNumberSize;
-  // size: CeStyleSize;
   variant: InputVariant;
   multiline: boolean;
   invalid: boolean;
@@ -25,9 +23,7 @@ export default createStyles(
   (
     theme,
     {
-      // size,
       multiline,
-      // radius,
       variant,
       invalid,
       rightSectionWidth,

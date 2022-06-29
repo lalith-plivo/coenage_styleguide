@@ -34,14 +34,6 @@ const buttonSizes = {
   xl: 40,
 };
 
-const iconSizes = {
-  xs: 12,
-  sm: 15,
-  md: 17,
-  lg: 19,
-  xl: 21,
-};
-
 const rightSectionSizes = {
   xs: 28,
   sm: 34,

@@ -5,25 +5,25 @@ import { SelectRightSection } from './SelectRightSection';
 
 describe('@cestyle/core/SelectRightSection', () => {
   it('renders ChevronIcon when shouldClear is false', () => {
-    const { container } = render(<SelectRightSection shouldClear={false} size="sm" />);
+    const { container } = render(<SelectRightSection shouldClear={false} />);
     expect(container.querySelector('[data-chevron]')).toBeInTheDocument();
     expect(container.querySelectorAll('button')).toHaveLength(0);
   });
 
   it('renders CloseButton when shouldClear is true', () => {
-    const { container } = render(<SelectRightSection shouldClear size="sm" />);
+    const { container } = render(<SelectRightSection shouldClear />);
     expect(container.querySelectorAll('[data-chevron]')).toHaveLength(0);
     expect(container.querySelector('button')).toBeInTheDocument();
   });
 
   it('sets aria-label and size on CloseButton', () => {
-    render(<SelectRightSection shouldClear size="sm" clearButtonLabel="test-label" />);
+    render(<SelectRightSection shouldClear clearButtonLabel="test-label" />);
     expect(screen.getByLabelText('test-label')).toBeInTheDocument();
   });
 
   it('calls onClear when CloseButton is clicked', () => {
     const spy = jest.fn();
-    render(<SelectRightSection shouldClear size="sm" onClear={spy} />);
+    render(<SelectRightSection shouldClear onClear={spy} />);
     userEvent.click(screen.getByRole('button'));
     expect(spy).toHaveBeenCalledTimes(1);
   });

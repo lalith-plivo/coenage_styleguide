@@ -1,4 +1,4 @@
-import { createStyles, CeStyleColor } from '@cestyle/styles';
+import { createStyles } from '@cestyle/styles';
 
 export interface BlockquoteStylesParams {}
 

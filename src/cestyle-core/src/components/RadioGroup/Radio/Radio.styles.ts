@@ -42,8 +42,8 @@ export default createStyles(
         width: 8,
         height: 8,
         position: 'absolute',
-        top: `calc(50% - 4px)`,
-        left: `calc(50% - 4px)`,
+        top: 'calc(50% - 4px)',
+        left: 'calc(50% - 4px)',
       },
 
       radio: {

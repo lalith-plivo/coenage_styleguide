@@ -1,4 +1,4 @@
-import { createStyles, CeStyleNumberSize, CeStyleSize } from '@cestyle/styles';
+import { createStyles } from '@cestyle/styles';
 
 export interface NumberInputStylesParams {
   // radius: CeStyleNumberSize;
@@ -27,7 +27,6 @@ export default createStyles((theme, {}: NumberInputStylesParams) => ({
     position: 'relative',
     flex: '0 0 50%',
     boxSizing: 'border-box',
-    width: theme.fn.size({ size: 'sm', sizes: CONTROL_SIZES }),
     padding: 0,
     WebkitTapHighlightColor: 'transparent',
     borderBottom: `1px solid ${

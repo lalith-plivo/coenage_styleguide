@@ -1,4 +1,4 @@
-import { createStyles, CeStyleNumberSize, CeStyleShadow } from '@cestyle/styles';
+import { createStyles, CeStyleShadow } from '@cestyle/styles';
 
 export interface PaperStylesParams {
   shadow: CeStyleShadow;

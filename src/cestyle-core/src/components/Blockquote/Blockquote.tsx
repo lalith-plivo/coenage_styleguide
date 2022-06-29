@@ -1,5 +1,5 @@
 import React, { forwardRef } from 'react';
-import { DefaultProps, CeStyleColor, Selectors, useCeStyleDefaultProps } from '@cestyle/styles';
+import { DefaultProps, Selectors, useCeStyleDefaultProps } from '@cestyle/styles';
 import { Box } from '../Box';
 import { QuoteIcon } from './QuoteIcon';
 import useStyles from './Blockquote.styles';

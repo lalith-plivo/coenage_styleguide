@@ -2,7 +2,6 @@ import React, { forwardRef } from 'react';
 import {
   DefaultProps,
   CeStyleSize,
-  CeStyleNumberSize,
   CeStyleColor,
   Selectors,
   PolymorphicComponentProps,

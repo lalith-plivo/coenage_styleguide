@@ -134,7 +134,10 @@ export const NumberInput = forwardRef<HTMLInputElement, NumberInputProps>(
       ...others
     } = useCeStyleDefaultProps('NumberInput', defaultProps, props);
 
-    const { classes, cx, theme } = useStyles({}, { classNames, styles, name: 'NumberInput' });
+    const { classes, cx, theme } = useStyles(
+      { variant },
+      { classNames, styles, name: 'NumberInput' }
+    );
 
     const [focused, setFocused] = useState(false);
     const [_value, setValue] = useState(

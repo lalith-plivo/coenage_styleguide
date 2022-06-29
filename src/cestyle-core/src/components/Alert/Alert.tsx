@@ -1,5 +1,5 @@
 import React, { forwardRef } from 'react';
-import { DefaultProps, CeStyleColor, Selectors, useCeStyleDefaultProps } from '@cestyle/styles';
+import { DefaultProps, Selectors, useCeStyleDefaultProps } from '@cestyle/styles';
 import { useUuid } from '@cestyle/hooks';
 import { CloseButton } from '../ActionIcon';
 import { Box } from '../Box';
