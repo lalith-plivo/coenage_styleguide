@@ -10,7 +10,7 @@
   "sideEffects": false,
   "homepage": "https://cestyle.dev",
   "repository": {
-    "url": "https://github.com/cestyledev/cestyle.git",
+    "url": "https://github.com/lalith-plivo/coenage_styleguide.git",
     "type": "git",
     "directory": "src/cestyle-styles"
   },
